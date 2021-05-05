@@ -58,6 +58,9 @@ autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or M
 
 let g:sql_type_default="postgresql"
 
+" disable snipMate legacy warning https://www.wiserfirst.com/blog/vim-tip-snipmate-legacy-parser-warning/
+let g:snipMate = { 'snippet_version' : 1 }
+
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
 if has("gui_running")
